@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 from pymongo import MongoClient
+from dotenv import load_dotenv
+import os
 
 # MongoDB setup
 client = MongoClient("mongodb://localhost:27017/")
