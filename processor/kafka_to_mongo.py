@@ -16,7 +16,7 @@ consumer = KafkaConsumer(
 )
 
 # MongoDB setup
-client = MongoClient("mongodb://localhost:27017/")
+client = MongoClient("mongodb+srv://ishaanvats83:poym8XoADTppsi7j@cluster0.mongodb.net/?retryWrites=true&w=majority") 
 db = client["ad_analytics"]
 collection = db["campaign_metrics"]
 
