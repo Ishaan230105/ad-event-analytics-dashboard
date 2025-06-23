@@ -4,8 +4,10 @@ from pymongo import MongoClient
 from dotenv import load_dotenv
 import os
 
+load_dotenv()
+MONGO_URI = os.getenv("MONGO_URI")
 # MongoDB setup
-client = MongoClient("mongodb://localhost:27017/")
+client = MongoClient(MONGO_URI)
 db = client["ad_analytics"]
 collection = db["campaign_metrics"]
 
